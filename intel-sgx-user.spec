@@ -4,8 +4,6 @@ Version:        0.0.20200226
 Release:        1%{?dist}
 License:        Apache-2.0
 
-# Test
-#URL:            https://github.com/intel/linux-sgx-driver
 Source0: 	https://github.com/intel/linux-sgx-driver/archive/sgx_driver_2.6.tar.gz
 
 %{?systemd_requires}
@@ -42,7 +40,6 @@ find contrib/ -type f -name ".gitignore" -exec rm "{}" \;
 %doc README.md
 %license COPYING
 %{_bindir}/intel-sgx-user
-#%{_bindir}/*
 %{_sysconfdir}/intel-sgx-user
 
 
